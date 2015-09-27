@@ -1,0 +1,237 @@
+{
+	"id": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+	"name": "APIs.How",
+	"description": "I have long used Bit.ly as my URL shortner, but recently have started outgrowing the platform, and needing more control over my links. I have apis.how as a universal URL shortener for my online and offline linkage.",
+	"order": [],
+	"folders": [
+		{
+			"id": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088",
+			"name": "link",
+			"description": "Folder for link",
+			"order": [
+				"7be1e9f5-a75a-c509-4de8-1fe567d5e44c",
+				"fd385cde-e10e-a190-09ca-9d3fcdc3e70c",
+				"c7c3675a-3ba1-c19d-2fdd-343a5a170e40",
+				"b8492949-e611-8ca9-e5e9-a6d0cca0daa4",
+				"02c3bdf1-8450-eea1-b394-e33eca0b113e",
+				"943a91aa-3bd3-8ebd-13ab-5cbf197bae5e",
+				"a76601cc-bbb6-6cb2-9420-83a76482e014",
+				"dc3ed449-69f5-bfad-c77c-d403222baace"
+			],
+			"owner": "27278"
+		}
+	],
+	"timestamp": 1413302258635,
+	"owner": "27278",
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "02c3bdf1-8450-eea1-b394-e33eca0b113e",
+			"headers": "",
+			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "delete link",
+			"descriptionFormat": "html",
+			"time": 1443318933760,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+			"name": "delete link",
+			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+		},
+		{
+			"id": "7be1e9f5-a75a-c509-4de8-1fe567d5e44c",
+			"headers": "",
+			"url": "http://api.apis.how/link/?appid={{appid}}&appkey={{appkey}}&query={{query}}&page={{page}}&count={{count}}&sort={{sort}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "all links",
+			"descriptionFormat": "html",
+			"time": 1443318933760,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+			"name": "all links",
+			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+		},
+		{
+			"id": "943a91aa-3bd3-8ebd-13ab-5cbf197bae5e",
+			"headers": "",
+			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "link tags",
+			"descriptionFormat": "html",
+			"time": 1443318933760,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+			"name": "link tags",
+			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+		},
+		{
+			"id": "a76601cc-bbb6-6cb2-9420-83a76482e014",
+			"headers": "",
+			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&tag={{tag}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "add tag to link",
+			"descriptionFormat": "html",
+			"time": 1443318933761,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+			"name": "add tag to link",
+			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+		},
+		{
+			"id": "b8492949-e611-8ca9-e5e9-a6d0cca0daa4",
+			"headers": "",
+			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&link_date={{link_date}}&url={{url}}&short_url={{short_url}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "update link",
+			"descriptionFormat": "html",
+			"time": 1443318933760,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+			"name": "update link",
+			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+		},
+		{
+			"id": "c7c3675a-3ba1-c19d-2fdd-343a5a170e40",
+			"headers": "",
+			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "retrieve a link using its id",
+			"descriptionFormat": "html",
+			"time": 1443318933760,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+			"name": "retrieve a link using its id",
+			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+		},
+		{
+			"id": "dc3ed449-69f5-bfad-c77c-d403222baace",
+			"headers": "",
+			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/tags/%7Btag%7D?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "delete link tag",
+			"descriptionFormat": "html",
+			"time": 1443318933761,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+			"name": "delete link tag",
+			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+		},
+		{
+			"id": "fd385cde-e10e-a190-09ca-9d3fcdc3e70c",
+			"headers": "",
+			"url": "http://api.apis.how/link/?appid={{appid}}&appkey={{appkey}}&url={{url}}&short_url={{short_url}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "add a link",
+			"descriptionFormat": "html",
+			"time": 1443318933760,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
+			"name": "add a link",
+			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+		}
+	]
+}

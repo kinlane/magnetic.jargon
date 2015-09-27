@@ -1,0 +1,61 @@
+{
+  "name": "Magnetic Jargon",
+  "description": "I encounter a lot of acronyms and jargon in my world. I wanted to create an API so that some of this jargon could be captured, expressed through a refridgerator magnet application, and enjoyed by everyone--this is the API to start all that.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-link.png",
+  "tags": [
+    "Application Programming Interface",
+    "API",
+    "Jargon"
+  ],
+  "created": "2015-09-26",
+  "modified": "2015-09-26",
+  "url": "http://developer.magnetic.jargon.kinlane.com/apis.json",
+  "SpecificationVersion": "0.14",
+  "apis": [
+    {
+      "name": "Magnetic Jargon",
+      "description": "The API for Magnetic Jargon",
+      "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-link.png",
+      "humanURL": "http://developer.magnetic.jargon.kinlane.com/",
+      "baseURL": "http://magnetic.jargon.api.kinlane.com",
+      "tags": [
+        "API",
+        "Application Programming Interface",
+        "Jargon"
+      ],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "http://developer.magnetic.jargon.kinlane.com/swagger.json"
+        },
+        {
+          "type": "Blueprint",
+          "url": "http://developer.magnetic.jargon.kinlane.com/dictionary.apib"
+        },
+        {
+          "type": "x-postman",
+          "url": "http://developer.magnetic.jargon.kinlane.com/postman.json"
+        },
+        {
+          "type": "x-api-science",
+          "url": "http://developer.magnetic.jargon.kinlane.com/status/"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "API Evangliest",
+          "email": "info@apievangelist.com",
+          "X-twitter": "apievangelist"
+        }
+      ]
+    }
+  ],
+  "include": [],
+  "maintainers": [
+    {
+      "FN": "API Evangliest",
+      "X-twitter": "apievangelist",
+      "email": "info@apievangelist.com"
+    }
+  ]
+}
