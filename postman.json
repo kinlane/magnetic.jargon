@@ -1,22 +1,22 @@
 {
-	"id": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+	"id": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
 	"name": "Magnetic Jargon",
 	"description": "I encounter a lot of acronyms and jargon in my world. I wanted to create an API so that some of this jargon could be captured, expressed through a refridgerator magnet application, and enjoyed by everyone--this is the API to start all that.",
 	"order": [],
 	"folders": [
 		{
-			"id": "24cfa9a9-26be-c851-4376-77d06defb7a8",
+			"id": "f567cdcc-792b-0b18-75a6-f461a80b79f5",
 			"name": "dictionary",
 			"description": "Folder for dictionary",
 			"order": [
-				"e04eefbe-3559-8433-ce97-3340be565b0d",
-				"e1f3a176-e2dd-1561-f418-78314e3539d7",
-				"b9e6d4bd-4a5a-c933-7a5e-7fbef94e96a8",
-				"f0c6c286-7bd1-8f52-234c-1a16432a5f39",
-				"92f810c2-67cb-1fd6-4e82-509eed7d4fe3",
-				"a6e00a3a-6ed5-e056-0771-56463820f57c",
-				"72b8de99-9b4d-0653-9464-1cb5fc9967a3",
-				"5f8858f3-c4b2-48f4-46f5-8f58bb55e3f5"
+				"de0a51e7-9858-9c58-67b9-5281d5f790d4",
+				"6df5651e-c524-a949-e99a-aabe91e850a9",
+				"06c2098d-aa72-6b9c-13ec-35039ec5253b",
+				"4d0853ae-9df5-f44b-a5ae-07f9b093135b",
+				"63ae6e17-b34e-7dcd-4d6a-6228327cb449",
+				"7b41ed87-1bea-3be5-6214-ad1264b7803f",
+				"70c702ca-8dd3-a36e-7448-d3e610d19a1a",
+				"57ccac0d-93bd-588b-365f-6f2e68b9b414"
 			],
 			"owner": "27278"
 		}
@@ -26,113 +26,9 @@
 	"hasRequests": true,
 	"requests": [
 		{
-			"id": "5f8858f3-c4b2-48f4-46f5-8f58bb55e3f5",
+			"id": "06c2098d-aa72-6b9c-13ec-35039ec5253b",
 			"headers": "",
-			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/tags/%7Btag%7D?appid={{appid}}&appkey={{appkey}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "DELETE",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "delete dictionary tag",
-			"descriptionFormat": "html",
-			"time": 1443322249504,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
-			"name": "delete dictionary tag",
-			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
-		},
-		{
-			"id": "72b8de99-9b4d-0653-9464-1cb5fc9967a3",
-			"headers": "",
-			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&tag={{tag}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "POST",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "add tag to dictionary",
-			"descriptionFormat": "html",
-			"time": 1443322249504,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
-			"name": "add tag to dictionary",
-			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
-		},
-		{
-			"id": "92f810c2-67cb-1fd6-4e82-509eed7d4fe3",
-			"headers": "",
-			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "DELETE",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "delete dictionary",
-			"descriptionFormat": "html",
-			"time": 1443322249503,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
-			"name": "delete dictionary",
-			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
-		},
-		{
-			"id": "a6e00a3a-6ed5-e056-0771-56463820f57c",
-			"headers": "",
-			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "GET",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "dictionary tags",
-			"descriptionFormat": "html",
-			"time": 1443322249503,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
-			"name": "dictionary tags",
-			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
-		},
-		{
-			"id": "b9e6d4bd-4a5a-c933-7a5e-7fbef94e96a8",
-			"headers": "",
-			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
+			"url": "http://magnetic.jargon.api.kinlane.com/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -147,70 +43,18 @@
 			"dataMode": "params",
 			"description": "retrieve a dictionary using its id",
 			"descriptionFormat": "html",
-			"time": 1443322249503,
+			"time": 1443322463494,
 			"version": 2,
 			"responses": [],
 			"tests": "",
-			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"collectionId": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
 			"name": "retrieve a dictionary using its id",
-			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
+			"folder": "f567cdcc-792b-0b18-75a6-f461a80b79f5"
 		},
 		{
-			"id": "e04eefbe-3559-8433-ce97-3340be565b0d",
+			"id": "4d0853ae-9df5-f44b-a5ae-07f9b093135b",
 			"headers": "",
-			"url": "http://http/dictionary/?appid={{appid}}&appkey={{appkey}}&query={{query}}&page={{page}}&count={{count}}&sort={{sort}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "GET",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "all dictionaries",
-			"descriptionFormat": "html",
-			"time": 1443322249502,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
-			"name": "all dictionaries",
-			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
-		},
-		{
-			"id": "e1f3a176-e2dd-1561-f418-78314e3539d7",
-			"headers": "",
-			"url": "http://http/dictionary/?appid={{appid}}&appkey={{appkey}}&title={{title}}&name={{name}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "POST",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "add a dictionary",
-			"descriptionFormat": "html",
-			"time": 1443322249503,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
-			"name": "add a dictionary",
-			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
-		},
-		{
-			"id": "f0c6c286-7bd1-8f52-234c-1a16432a5f39",
-			"headers": "",
-			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&created_date={{created_date}}&title={{title}}&name={{name}}&",
+			"url": "http://magnetic.jargon.api.kinlane.com/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&created_date={{created_date}}&title={{title}}&name={{name}}&",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "PUT",
@@ -225,13 +69,169 @@
 			"dataMode": "params",
 			"description": "update dictionary",
 			"descriptionFormat": "html",
-			"time": 1443322249503,
+			"time": 1443322463494,
 			"version": 2,
 			"responses": [],
 			"tests": "",
-			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"collectionId": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
 			"name": "update dictionary",
-			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
+			"folder": "f567cdcc-792b-0b18-75a6-f461a80b79f5"
+		},
+		{
+			"id": "57ccac0d-93bd-588b-365f-6f2e68b9b414",
+			"headers": "",
+			"url": "http://magnetic.jargon.api.kinlane.com/dictionary/%7B%7Bdictionary_id%7D%7D/tags/%7Btag%7D?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "delete dictionary tag",
+			"descriptionFormat": "html",
+			"time": 1443322463494,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
+			"name": "delete dictionary tag",
+			"folder": "f567cdcc-792b-0b18-75a6-f461a80b79f5"
+		},
+		{
+			"id": "63ae6e17-b34e-7dcd-4d6a-6228327cb449",
+			"headers": "",
+			"url": "http://magnetic.jargon.api.kinlane.com/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "delete dictionary",
+			"descriptionFormat": "html",
+			"time": 1443322463494,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
+			"name": "delete dictionary",
+			"folder": "f567cdcc-792b-0b18-75a6-f461a80b79f5"
+		},
+		{
+			"id": "6df5651e-c524-a949-e99a-aabe91e850a9",
+			"headers": "",
+			"url": "http://magnetic.jargon.api.kinlane.com/dictionary/?appid={{appid}}&appkey={{appkey}}&title={{title}}&name={{name}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "add a dictionary",
+			"descriptionFormat": "html",
+			"time": 1443322463492,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
+			"name": "add a dictionary",
+			"folder": "f567cdcc-792b-0b18-75a6-f461a80b79f5"
+		},
+		{
+			"id": "70c702ca-8dd3-a36e-7448-d3e610d19a1a",
+			"headers": "",
+			"url": "http://magnetic.jargon.api.kinlane.com/dictionary/%7B%7Bdictionary_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&tag={{tag}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "add tag to dictionary",
+			"descriptionFormat": "html",
+			"time": 1443322463494,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
+			"name": "add tag to dictionary",
+			"folder": "f567cdcc-792b-0b18-75a6-f461a80b79f5"
+		},
+		{
+			"id": "7b41ed87-1bea-3be5-6214-ad1264b7803f",
+			"headers": "",
+			"url": "http://magnetic.jargon.api.kinlane.com/dictionary/%7B%7Bdictionary_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "dictionary tags",
+			"descriptionFormat": "html",
+			"time": 1443322463494,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
+			"name": "dictionary tags",
+			"folder": "f567cdcc-792b-0b18-75a6-f461a80b79f5"
+		},
+		{
+			"id": "de0a51e7-9858-9c58-67b9-5281d5f790d4",
+			"headers": "",
+			"url": "http://magnetic.jargon.api.kinlane.com/dictionary/",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443322472918,
+			"name": "all dictionaries",
+			"description": "all dictionaries",
+			"collectionId": "64e7c457-4324-e77c-71c0-a02fcd7da5c7",
+			"responses": []
 		}
 	]
 }
