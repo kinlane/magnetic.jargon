@@ -1,22 +1,22 @@
 {
-	"id": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-	"name": "APIs.How",
-	"description": "I have long used Bit.ly as my URL shortner, but recently have started outgrowing the platform, and needing more control over my links. I have apis.how as a universal URL shortener for my online and offline linkage.",
+	"id": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+	"name": "Magnetic Jargon",
+	"description": "I encounter a lot of acronyms and jargon in my world. I wanted to create an API so that some of this jargon could be captured, expressed through a refridgerator magnet application, and enjoyed by everyone--this is the API to start all that.",
 	"order": [],
 	"folders": [
 		{
-			"id": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088",
-			"name": "link",
-			"description": "Folder for link",
+			"id": "24cfa9a9-26be-c851-4376-77d06defb7a8",
+			"name": "dictionary",
+			"description": "Folder for dictionary",
 			"order": [
-				"7be1e9f5-a75a-c509-4de8-1fe567d5e44c",
-				"fd385cde-e10e-a190-09ca-9d3fcdc3e70c",
-				"c7c3675a-3ba1-c19d-2fdd-343a5a170e40",
-				"b8492949-e611-8ca9-e5e9-a6d0cca0daa4",
-				"02c3bdf1-8450-eea1-b394-e33eca0b113e",
-				"943a91aa-3bd3-8ebd-13ab-5cbf197bae5e",
-				"a76601cc-bbb6-6cb2-9420-83a76482e014",
-				"dc3ed449-69f5-bfad-c77c-d403222baace"
+				"e04eefbe-3559-8433-ce97-3340be565b0d",
+				"e1f3a176-e2dd-1561-f418-78314e3539d7",
+				"b9e6d4bd-4a5a-c933-7a5e-7fbef94e96a8",
+				"f0c6c286-7bd1-8f52-234c-1a16432a5f39",
+				"92f810c2-67cb-1fd6-4e82-509eed7d4fe3",
+				"a6e00a3a-6ed5-e056-0771-56463820f57c",
+				"72b8de99-9b4d-0653-9464-1cb5fc9967a3",
+				"5f8858f3-c4b2-48f4-46f5-8f58bb55e3f5"
 			],
 			"owner": "27278"
 		}
@@ -26,9 +26,9 @@
 	"hasRequests": true,
 	"requests": [
 		{
-			"id": "02c3bdf1-8450-eea1-b394-e33eca0b113e",
+			"id": "5f8858f3-c4b2-48f4-46f5-8f58bb55e3f5",
 			"headers": "",
-			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
+			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/tags/%7Btag%7D?appid={{appid}}&appkey={{appkey}}&",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "DELETE",
@@ -41,72 +41,20 @@
 				}
 			],
 			"dataMode": "params",
-			"description": "delete link",
+			"description": "delete dictionary tag",
 			"descriptionFormat": "html",
-			"time": 1443318933760,
+			"time": 1443322249504,
 			"version": 2,
 			"responses": [],
 			"tests": "",
-			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-			"name": "delete link",
-			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"name": "delete dictionary tag",
+			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
 		},
 		{
-			"id": "7be1e9f5-a75a-c509-4de8-1fe567d5e44c",
+			"id": "72b8de99-9b4d-0653-9464-1cb5fc9967a3",
 			"headers": "",
-			"url": "http://api.apis.how/link/?appid={{appid}}&appkey={{appkey}}&query={{query}}&page={{page}}&count={{count}}&sort={{sort}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "GET",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "all links",
-			"descriptionFormat": "html",
-			"time": 1443318933760,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-			"name": "all links",
-			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
-		},
-		{
-			"id": "943a91aa-3bd3-8ebd-13ab-5cbf197bae5e",
-			"headers": "",
-			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "GET",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "link tags",
-			"descriptionFormat": "html",
-			"time": 1443318933760,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-			"name": "link tags",
-			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
-		},
-		{
-			"id": "a76601cc-bbb6-6cb2-9420-83a76482e014",
-			"headers": "",
-			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&tag={{tag}}&",
+			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&tag={{tag}}&",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -119,20 +67,150 @@
 				}
 			],
 			"dataMode": "params",
-			"description": "add tag to link",
+			"description": "add tag to dictionary",
 			"descriptionFormat": "html",
-			"time": 1443318933761,
+			"time": 1443322249504,
 			"version": 2,
 			"responses": [],
 			"tests": "",
-			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-			"name": "add tag to link",
-			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"name": "add tag to dictionary",
+			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
 		},
 		{
-			"id": "b8492949-e611-8ca9-e5e9-a6d0cca0daa4",
+			"id": "92f810c2-67cb-1fd6-4e82-509eed7d4fe3",
 			"headers": "",
-			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&link_date={{link_date}}&url={{url}}&short_url={{short_url}}&",
+			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "delete dictionary",
+			"descriptionFormat": "html",
+			"time": 1443322249503,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"name": "delete dictionary",
+			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
+		},
+		{
+			"id": "a6e00a3a-6ed5-e056-0771-56463820f57c",
+			"headers": "",
+			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/tags/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "dictionary tags",
+			"descriptionFormat": "html",
+			"time": 1443322249503,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"name": "dictionary tags",
+			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
+		},
+		{
+			"id": "b9e6d4bd-4a5a-c933-7a5e-7fbef94e96a8",
+			"headers": "",
+			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "retrieve a dictionary using its id",
+			"descriptionFormat": "html",
+			"time": 1443322249503,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"name": "retrieve a dictionary using its id",
+			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
+		},
+		{
+			"id": "e04eefbe-3559-8433-ce97-3340be565b0d",
+			"headers": "",
+			"url": "http://http/dictionary/?appid={{appid}}&appkey={{appkey}}&query={{query}}&page={{page}}&count={{count}}&sort={{sort}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "all dictionaries",
+			"descriptionFormat": "html",
+			"time": 1443322249502,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"name": "all dictionaries",
+			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
+		},
+		{
+			"id": "e1f3a176-e2dd-1561-f418-78314e3539d7",
+			"headers": "",
+			"url": "http://http/dictionary/?appid={{appid}}&appkey={{appkey}}&title={{title}}&name={{name}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "add a dictionary",
+			"descriptionFormat": "html",
+			"time": 1443322249503,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"name": "add a dictionary",
+			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
+		},
+		{
+			"id": "f0c6c286-7bd1-8f52-234c-1a16432a5f39",
+			"headers": "",
+			"url": "http://http/dictionary/%7B%7Bdictionary_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&created_date={{created_date}}&title={{title}}&name={{name}}&",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "PUT",
@@ -145,93 +223,15 @@
 				}
 			],
 			"dataMode": "params",
-			"description": "update link",
+			"description": "update dictionary",
 			"descriptionFormat": "html",
-			"time": 1443318933760,
+			"time": 1443322249503,
 			"version": 2,
 			"responses": [],
 			"tests": "",
-			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-			"name": "update link",
-			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
-		},
-		{
-			"id": "c7c3675a-3ba1-c19d-2fdd-343a5a170e40",
-			"headers": "",
-			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/?appid={{appid}}&appkey={{appkey}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "GET",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "retrieve a link using its id",
-			"descriptionFormat": "html",
-			"time": 1443318933760,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-			"name": "retrieve a link using its id",
-			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
-		},
-		{
-			"id": "dc3ed449-69f5-bfad-c77c-d403222baace",
-			"headers": "",
-			"url": "http://api.apis.how/link/%7B%7Blink_id%7D%7D/tags/%7Btag%7D?appid={{appid}}&appkey={{appkey}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "DELETE",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "delete link tag",
-			"descriptionFormat": "html",
-			"time": 1443318933761,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-			"name": "delete link tag",
-			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
-		},
-		{
-			"id": "fd385cde-e10e-a190-09ca-9d3fcdc3e70c",
-			"headers": "",
-			"url": "http://api.apis.how/link/?appid={{appid}}&appkey={{appkey}}&url={{url}}&short_url={{short_url}}&",
-			"pathVariables": {},
-			"preRequestScript": "",
-			"method": "POST",
-			"data": [
-				{
-					"key": "size",
-					"value": "original",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"description": "add a link",
-			"descriptionFormat": "html",
-			"time": 1443318933760,
-			"version": 2,
-			"responses": [],
-			"tests": "",
-			"collectionId": "a5e1d062-83be-c8f8-4ece-67ce0432960b",
-			"name": "add a link",
-			"folder": "c1ea7d89-9c37-4c2b-a774-c0cccdb93088"
+			"collectionId": "32eca018-6852-6b47-9f35-0449f92bd3a7",
+			"name": "update dictionary",
+			"folder": "24cfa9a9-26be-c851-4376-77d06defb7a8"
 		}
 	]
 }

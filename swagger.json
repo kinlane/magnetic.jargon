@@ -107,14 +107,14 @@
             "type": "string"
           },
           {
-            "name": "url",
+            "name": "title",
             "in": "query",
             "description": "url for the dictionary",
             "required": true,
             "type": "string"
           },
           {
-            "name": "short_url",
+            "name": "name",
             "in": "query",
             "description": "short url for the dictionary",
             "required": false,
@@ -200,7 +200,7 @@
       "put": {
         "summary": "update dictionary",
         "description": "update dictionary",
-        "operationId": "updatedictionary",
+        "operationId": "updateDictionary",
         "parameters": [
           {
             "name": "dictionary_id",
@@ -225,23 +225,23 @@
             "type": "string"
           },
           {
-            "name": "dictionary_date",
+            "name": "created_date",
             "in": "query",
             "description": "date the dictionary was last pulled",
             "required": false,
             "type": "string"
           },
           {
-            "name": "url",
+            "name": "title",
             "in": "query",
-            "description": "ttle for the dictionary",
+            "description": "title for the dictionary",
             "required": false,
             "type": "string"
           },
           {
-            "name": "short_url",
+            "name": "name",
             "in": "query",
-            "description": "short_url of the dictionary",
+            "description": "user who created dictionary",
             "required": false,
             "type": "string"
           }
@@ -516,12 +516,12 @@
           "description": "date the dictionary was created",
           "type": "string"
         },
-        "url": {
-          "description": "ttle for the dictionary",
+        "title": {
+          "description": "title for the dictionary",
           "type": "string"
         },
-        "short_url": {
-          "description": "short_url of the dictionary",
+        "name": {
+          "description": "name of who created the dictionary",
           "type": "string"
         }
       }
