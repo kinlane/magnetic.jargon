@@ -6,7 +6,7 @@
     "termsOfService": "http://stack.network/terms-of-service.html",
     "version": "v1"
   },
-  "host": "http://magnetic.jargon.api.kinlane.com/",
+  "host": "magnetic.jargon.api.kinlane.com",
   "basePath": "/",
   "schemes": [
     "http"
