@@ -1,0 +1,263 @@
+FORMAT: 1A
+HOST: http://magnetic.jargon.api.kinlane.com/
+
+# Magnetic Jargon
+I encounter a lot of acronyms and jargon in my world. I wanted to create an API so that some of this jargon could be captured, expressed through a refridgerator magnet application, and enjoyed by everyone--this is the API to start all that.
+
+## Authentication
+This API uses Custom Query Parameter for its authentication.
+
+The parameters that are needed to be sent for this type of authentication are as follows:
++ `appid`
++ `appkey`
+
+# Group Links
+
+## Dictionary [/dictionary/{?appid,appkey,query,page,count,sort}]
+
+### getLinks [GET]
+all dictionaries
++ Parameters
+    + appid (string, required)
+
+        your appid for accessing the dictionary
+
+    + appkey (string, required)
+
+        your appkey for accessing the dictionary
+
+    + query (string, optional)
+
+        a text query to search across dictionary
+
+    + page (string, optional)
+
+        which page of results to show
+
+    + count (string, optional)
+
+        how many to show on page
+
+    + sort (string, optional)
+
+        which field to sort by
+
+
++ Response 200 (application/json)
+    + Attributes (array[dictionary])
+
+
+## Dictionary [/dictionary/{?appid,appkey,title,name}]
+
+### addLink [POST]
+add a dictionary
++ Parameters
+    + appid (string, required)
+
+        your appid for accessing the dictionary
+
+    + appkey (string, required)
+
+        your appkey for accessing the dictionary
+
+    + title (string, required)
+
+        url for the dictionary
+
+    + name (string, optional)
+
+        short url for the dictionary
+
+
++ Response 200 (application/json)
+    + Attributes (array[dictionary])
+
+
+## Dictionary By Dictionary Id [/dictionary/{dictionary_id}/{?appid,appkey}]
+
++ Parameters
+    + dictionary_id (number, required)
+
+        the unique id for dictionary entry
+
+
+### getdictionary [GET]
+retrieve a dictionary using its id
++ Parameters
+    + appid (string, required)
+
+        your appid for accessing the dictionary
+
+    + appkey (string, required)
+
+        your appkey for accessing the dictionary
+
+
++ Response 200 (application/json)
+    + Attributes (array[dictionary])
+
+
+## Dictionary By Dictionary Id [/dictionary/{dictionary_id}/{?appid,appkey,created_date,title,name}]
+
++ Parameters
+    + dictionary_id (number, required)
+
+        the unique id for dictionary
+
+
+### updateDictionary [PUT]
+update dictionary
++ Parameters
+    + appid (string, required)
+
+        your appid for accessing the dictionary
+
+    + appkey (string, required)
+
+        your appkey for accessing the dictionary
+
+    + created_date (string, optional)
+
+        date the dictionary was last pulled
+
+    + title (string, optional)
+
+        title for the dictionary
+
+    + name (string, optional)
+
+        user who created dictionary
+
+
++ Response 200 (application/json)
+    + Attributes (array[dictionary])
+
+
+## Dictionary By Dictionary Id [/dictionary/{dictionary_id}/{?appid,appkey}]
+
++ Parameters
+    + dictionary_id (number, required)
+
+        the unique id for dictionary entry
+
+
+### deletedictionary [DELETE]
+delete dictionary
++ Parameters
+    + appid (string, required)
+
+        your appid for accessing the dictionary
+
+    + appkey (string, required)
+
+        your appkey for accessing the dictionary
+
+
++ Response 200 (application/json)
+    + Attributes (array[dictionary])
+
+
+
+# Group Tags
+
+## Dictionary Tags By Dictionary Id [/dictionary/{dictionary_id}/tags/{?appid,appkey}]
+
++ Parameters
+    + dictionary_id (number, required)
+
+        id for dictionary
+
+
+### getdictionaryTags [GET]
+dictionary tags
++ Parameters
+    + appid (string, required)
+
+        your appid for accessing the dictionary
+
+    + appkey (string, required)
+
+        your appkey for accessing the dictionary
+
+
++ Response 200 (application/json)
+    + Attributes (array[tag])
+
+
+## Dictionary Tags By Dictionary Id [/dictionary/{dictionary_id}/tags/{?appid,appkey,tag}]
+
++ Parameters
+    + dictionary_id (number, required)
+
+        id for the dictionary
+
+
+### adddictionaryTag [POST]
+add tag to dictionary
++ Parameters
+    + appid (string, required)
+
+        your appid for accessing the dictionary
+
+    + appkey (string, required)
+
+        your appkey for accessing the dictionary
+
+    + tag (string, required)
+
+        tag name
+
+
++ Response 200 (application/json)
+    + Attributes (array[tag])
+
+
+## Dictionary Tags By Dictionary Id And Tag [/dictionary/{dictionary_id}/tags/{tag}{?appid,appkey}]
+
++ Parameters
+    + dictionary_id (string, required)
+
+        id for the dictionary
+
+    + tag (string, required)
+
+        tag to remove from dictionary
+
+
+### deletedictionaryTag [DELETE]
+delete dictionary tag
++ Parameters
+    + appid (string, required)
+
+        your appid for accessing the dictionary
+
+    + appkey (string, required)
+
+        your appkey for accessing the dictionary
+
+
++ Response 200 (application/json)
+    + Attributes (array[tag])
+
+
+
+# Data Structures
+
+## dictionary (object)
+
+
+### Properties
++ `dictionary_id` (number, optional) - unique id of the dictionary
++ `created_date` (string, optional) - date the dictionary was created
++ `title` (string, optional) - title for the dictionary
++ `name` (string, optional) - name of who created the dictionary
+
+
+## tag (object)
+
+
+### Properties
++ `tag_id` (number, optional) - id for the tag
++ `tag` (string, optional) - text tag
++ `api_count` (number, optional) - number of items api with tag
+
