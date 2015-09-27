@@ -1,2 +1,4 @@
-# magnetic.jargon
-This is my magnetic jargon API.
+Low Hanging Fruit Core
+=======
+
+This is the core of the low hanging fruit.
