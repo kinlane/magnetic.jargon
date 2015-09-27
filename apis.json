@@ -1,7 +1,7 @@
 {
   "name": "Magnetic Jargon",
   "description": "I encounter a lot of acronyms and jargon in my world. I wanted to create an API so that some of this jargon could be captured, expressed through a refridgerator magnet application, and enjoyed by everyone--this is the API to start all that.",
-  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-link.png",
+  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-magnet.png",
   "tags": [
     "Application Programming Interface",
     "API",
@@ -15,7 +15,7 @@
     {
       "name": "Magnetic Jargon",
       "description": "The API for Magnetic Jargon",
-      "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-link.png",
+      "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-magnet.png",
       "humanURL": "http://developer.magnetic.jargon.kinlane.com/",
       "baseURL": "http://magnetic.jargon.api.kinlane.com",
       "tags": [
