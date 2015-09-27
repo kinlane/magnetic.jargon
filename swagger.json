@@ -15,30 +15,30 @@
     "application/json"
   ],
   "paths": {
-    "/link/": {
+    "/dictionary/": {
       "get": {
-        "summary": "all links",
-        "description": "all links",
+        "summary": "all dictionaries",
+        "description": "all dictionaries",
         "operationId": "getLinks",
         "parameters": [
           {
             "name": "appid",
             "in": "query",
-            "description": "your appid for accessing the link",
+            "description": "your appid for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appkey",
             "in": "query",
-            "description": "your appkey for accessing the link",
+            "description": "your appkey for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "query",
             "in": "query",
-            "description": "a text query to search across link",
+            "description": "a text query to search across dictionary",
             "required": false,
             "type": "string"
           },
@@ -66,11 +66,11 @@
         ],
         "responses": {
           "200": {
-            "description": "link response",
+            "description": "dictionary response",
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/link"
+                "$ref": "#/definitions/dictionary"
               }
             }
           }
@@ -88,46 +88,46 @@
         ]
       },
       "post": {
-        "summary": "add a link",
-        "description": "add a link",
+        "summary": "add a dictionary",
+        "description": "add a dictionary",
         "operationId": "addLink",
         "parameters": [
           {
             "name": "appid",
             "in": "query",
-            "description": "your appid for accessing the link",
+            "description": "your appid for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appkey",
             "in": "query",
-            "description": "your appkey for accessing the link",
+            "description": "your appkey for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "url",
             "in": "query",
-            "description": "url for the link",
+            "description": "url for the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "short_url",
             "in": "query",
-            "description": "short url for the link",
+            "description": "short url for the dictionary",
             "required": false,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "link response",
+            "description": "dictionary response",
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/link"
+                "$ref": "#/definitions/dictionary"
               }
             }
           }
@@ -145,16 +145,16 @@
         ]
       }
     },
-    "/link/{link_id}/": {
+    "/dictionary/{dictionary_id}/": {
       "get": {
-        "summary": "retrieve a link using its id",
-        "description": "retrieve a link using its id",
-        "operationId": "getlink",
+        "summary": "retrieve a dictionary using its id",
+        "description": "retrieve a dictionary using its id",
+        "operationId": "getdictionary",
         "parameters": [
           {
-            "name": "link_id",
+            "name": "dictionary_id",
             "in": "path",
-            "description": "the unique id for link entry",
+            "description": "the unique id for dictionary entry",
             "required": true,
             "type": "integer",
             "format": "id"
@@ -162,25 +162,25 @@
           {
             "name": "appid",
             "in": "query",
-            "description": "your appid for accessing the link",
+            "description": "your appid for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appkey",
             "in": "query",
-            "description": "your appkey for accessing the link",
+            "description": "your appkey for accessing the dictionary",
             "required": true,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "link response",
+            "description": "dictionary response",
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/link"
+                "$ref": "#/definitions/dictionary"
               }
             }
           }
@@ -198,14 +198,14 @@
         ]
       },
       "put": {
-        "summary": "update link",
-        "description": "update link",
-        "operationId": "updatelink",
+        "summary": "update dictionary",
+        "description": "update dictionary",
+        "operationId": "updatedictionary",
         "parameters": [
           {
-            "name": "link_id",
+            "name": "dictionary_id",
             "in": "path",
-            "description": "the unique id for link",
+            "description": "the unique id for dictionary",
             "required": true,
             "type": "integer",
             "format": "id"
@@ -213,46 +213,46 @@
           {
             "name": "appid",
             "in": "query",
-            "description": "your appid for accessing the link",
+            "description": "your appid for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appkey",
             "in": "query",
-            "description": "your appkey for accessing the link",
+            "description": "your appkey for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
-            "name": "link_date",
+            "name": "dictionary_date",
             "in": "query",
-            "description": "date the link was last pulled",
+            "description": "date the dictionary was last pulled",
             "required": false,
             "type": "string"
           },
           {
             "name": "url",
             "in": "query",
-            "description": "ttle for the link",
+            "description": "ttle for the dictionary",
             "required": false,
             "type": "string"
           },
           {
             "name": "short_url",
             "in": "query",
-            "description": "short_url of the link",
+            "description": "short_url of the dictionary",
             "required": false,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "link response",
+            "description": "dictionary response",
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/link"
+                "$ref": "#/definitions/dictionary"
               }
             }
           }
@@ -270,14 +270,14 @@
         ]
       },
       "delete": {
-        "summary": "delete link",
-        "description": "delete link",
-        "operationId": "deletelink",
+        "summary": "delete dictionary",
+        "description": "delete dictionary",
+        "operationId": "deletedictionary",
         "parameters": [
           {
-            "name": "link_id",
+            "name": "dictionary_id",
             "in": "path",
-            "description": "the unique id for link entry",
+            "description": "the unique id for dictionary entry",
             "required": true,
             "type": "integer",
             "format": "id"
@@ -285,25 +285,25 @@
           {
             "name": "appid",
             "in": "query",
-            "description": "your appid for accessing the link",
+            "description": "your appid for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appkey",
             "in": "query",
-            "description": "your appkey for accessing the link",
+            "description": "your appkey for accessing the dictionary",
             "required": true,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "link response",
+            "description": "dictionary response",
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/link"
+                "$ref": "#/definitions/dictionary"
               }
             }
           }
@@ -321,16 +321,16 @@
         ]
       }
     },
-    "/link/{link_id}/tags/": {
+    "/dictionary/{dictionary_id}/tags/": {
       "get": {
-        "summary": "link tags",
-        "description": "link tags",
-        "operationId": "getlinkTags",
+        "summary": "dictionary tags",
+        "description": "dictionary tags",
+        "operationId": "getdictionaryTags",
         "parameters": [
           {
-            "name": "link_id",
+            "name": "dictionary_id",
             "in": "path",
-            "description": "id for link",
+            "description": "id for dictionary",
             "required": true,
             "type": "integer",
             "format": "id"
@@ -338,21 +338,21 @@
           {
             "name": "appid",
             "in": "query",
-            "description": "your appid for accessing the link",
+            "description": "your appid for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appkey",
             "in": "query",
-            "description": "your appkey for accessing the link",
+            "description": "your appkey for accessing the dictionary",
             "required": true,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "link Tags Response",
+            "description": "dictionary Tags Response",
             "schema": {
               "type": "array",
               "items": {
@@ -374,14 +374,14 @@
         ]
       },
       "post": {
-        "summary": "add tag to link",
-        "description": "add tag to link",
-        "operationId": "addlinkTag",
+        "summary": "add tag to dictionary",
+        "description": "add tag to dictionary",
+        "operationId": "adddictionaryTag",
         "parameters": [
           {
-            "name": "link_id",
+            "name": "dictionary_id",
             "in": "path",
-            "description": "id for the link",
+            "description": "id for the dictionary",
             "required": true,
             "type": "integer",
             "format": "id"
@@ -389,14 +389,14 @@
           {
             "name": "appid",
             "in": "query",
-            "description": "your appid for accessing the link",
+            "description": "your appid for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appkey",
             "in": "query",
-            "description": "your appkey for accessing the link",
+            "description": "your appkey for accessing the dictionary",
             "required": true,
             "type": "string"
           },
@@ -410,7 +410,7 @@
         ],
         "responses": {
           "200": {
-            "description": "link Response",
+            "description": "dictionary Response",
             "schema": {
               "type": "array",
               "items": {
@@ -432,44 +432,44 @@
         ]
       }
     },
-    "/link/{link_id}/tags/{tag}": {
+    "/dictionary/{dictionary_id}/tags/{tag}": {
       "delete": {
-        "summary": "delete link tag",
-        "description": "delete link tag",
-        "operationId": "deletelinkTag",
+        "summary": "delete dictionary tag",
+        "description": "delete dictionary tag",
+        "operationId": "deletedictionaryTag",
         "parameters": [
           {
-            "name": "link_id",
+            "name": "dictionary_id",
             "in": "path",
-            "description": "id for the link",
+            "description": "id for the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appid",
             "in": "query",
-            "description": "your appid for accessing the link",
+            "description": "your appid for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "appkey",
             "in": "query",
-            "description": "your appkey for accessing the link",
+            "description": "your appkey for accessing the dictionary",
             "required": true,
             "type": "string"
           },
           {
             "name": "tag",
             "in": "path",
-            "description": "tag to remove from link",
+            "description": "tag to remove from dictionary",
             "required": true,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "link Tag Response",
+            "description": "dictionary Tag Response",
             "schema": {
               "type": "array",
               "items": {
@@ -505,23 +505,23 @@
     }
   },
   "definitions": {
-    "link": {
+    "dictionary": {
       "properties": {
-        "link_id": {
-          "description": "unique id of the link",
+        "dictionary_id": {
+          "description": "unique id of the dictionary",
           "type": "integer",
           "format": "id"
         },
         "created_date": {
-          "description": "date the link was created",
+          "description": "date the dictionary was created",
           "type": "string"
         },
         "url": {
-          "description": "ttle for the link",
+          "description": "ttle for the dictionary",
           "type": "string"
         },
         "short_url": {
-          "description": "short_url of the link",
+          "description": "short_url of the dictionary",
           "type": "string"
         }
       }
